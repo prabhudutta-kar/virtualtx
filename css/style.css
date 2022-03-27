@@ -1,0 +1,362 @@
+@import url("http://fonts.cdnfonts.com/css/gotham");
+
+/* Navbar Styling */
+.navbar {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.nav-item {
+  font-family: "Gotham", sans-serif;
+  font-weight: 600;
+}
+
+.nav-login .btn {
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+}
+
+.nav-login .login {
+  background-color: #e4e4e4;
+  color: #1b8cd9;
+  border: none;
+}
+
+.nav-login .signup {
+  background-color: #1b8cd9;
+  color: #eeeeee;
+  border: none;
+}
+/*Ends Navbar Styling*/
+
+/*Hero Section*/
+.landing-page {
+  /* height: 120vh; */
+  /* margin-top: -100px;
+  padding-top: 100px; */
+  overflow: hidden;
+}
+
+.landing-page .one {
+  display: flex;
+  padding-left: 6vw;
+}
+
+.landing-page .one h1 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 6.5em !important;
+  line-height: 1 !important;
+}
+
+.landing-page .one h2 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 2.9em !important;
+  line-height: 1 !important;
+  margin-bottom: 0;
+}
+
+.landing-page .one p {
+  font-family: "Gotham", sans-serif;
+  padding-top: 0.5rem;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(53, 53, 53);
+}
+
+.landing-page .one .btn {
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 15px 60px 15px 60px;
+  background-color: #1b8cd9;
+  color: #eeeeee;
+  border: none;
+}
+/*Ends Hero Section*/
+
+/*About-us Section*/
+.about-us {
+  overflow: hidden;
+}
+
+.about-us .two {
+  padding-right: 5vw;
+}
+
+.about-us .one {
+  display: flex;
+  padding-left: 6vw;
+  padding-right: 5vw;
+}
+
+.about-us .one h2 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 2em !important;
+  line-height: 1 !important;
+  margin-bottom: 0;
+}
+
+.about-us .one p {
+  font-family: "Gotham", sans-serif;
+  padding-top: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(53, 53, 53);
+}
+/*Ends About-us Section*/
+
+/*What-we-offer Section*/
+.we-offer {
+  overflow: hidden;
+  padding: 0rem 3rem 3rem 3rem;
+}
+
+.we-offer h2 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 2em !important;
+  margin-bottom: 2rem;
+}
+
+.we-offer .card {
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  font-family: "Gotham", sans-serif;
+  border: none !important;
+  border-radius: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.we-offer .card img {
+  width: fit-content !important;
+}
+
+.we-offer .card p {
+  font-size: 15px;
+}
+
+/*Ends What-we-offer Section*/
+
+/*Popular-games Section*/
+.popular-games {
+  overflow: hidden;
+  padding: 0rem 3rem 3rem 3rem;
+}
+
+.popular-games h2 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 2em !important;
+  margin-bottom: 2rem;
+}
+
+.popular-games .card {
+  font-family: "Gotham", sans-serif;
+  margin: 1rem;
+  border: none !important;
+  border-radius: 12px;
+}
+
+.popular-games .card p {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.popular-games .btn {
+  background-color: #ff9966;
+  border-color: #ff9966;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+/*Ends What-we-offer Section*/
+
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+/*Join-us Section*/
+.join-us {
+  overflow: hidden;
+  background-color: #e6f3ff;
+}
+
+.join-us .two {
+  padding-right: 5vw;
+}
+
+.join-us .one {
+  display: flex;
+  padding-left: 6vw;
+  padding-right: 5vw;
+}
+
+.join-us .one h2 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 2em !important;
+  line-height: 1 !important;
+  margin-bottom: 0;
+}
+
+.join-us .one p {
+  font-family: "Gotham", sans-serif;
+  padding-top: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(53, 53, 53);
+}
+
+.join-us .btn {
+  font-weight: 500;
+}
+/*Ends join-us Section*/
+
+/*Testimonials Section*/
+.testimonials {
+  overflow: hidden;
+  padding: 0rem 3rem 3rem 3rem;
+}
+
+.testimonials h2 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 2em !important;
+  margin-bottom: 2rem;
+}
+
+.testimonials .card {
+  font-family: "Gotham", sans-serif;
+  margin: 1rem;
+  border: none;
+  border-radius: 12px;
+}
+
+.testimonials .card p {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/*Ends Testimonials Section*/
+
+/*footer Section*/
+.footer {
+  overflow: hidden;
+  background-color: #325985;
+  color: white;
+}
+
+.footer .two {
+  padding-right: 5vw;
+}
+
+.footer .one {
+  display: flex;
+  padding-left: 6vw;
+  padding-right: 5vw;
+}
+
+.footer .one h2 {
+  font-family: "Gotham Black", sans-serif;
+  font-size: 2em !important;
+  line-height: 1 !important;
+  margin-bottom: 0;
+}
+
+.footer .one p {
+  font-family: "Gotham", sans-serif;
+  padding-top: 2rem;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.footer .btn {
+  font-weight: 500;
+}
+/*Ends footer Section*/
+
+.form-control {
+  background-color: #f5f5f5;
+}
+
+.auth-title-login,
+.auth-title-signup {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+.confirmation {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.confirmation-box {
+  height: 25vh;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  font-family: "Gotham", sans-serif;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.filtering span {
+  border-bottom: 2px solid transparent;
+  color: #282b2d;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.filtering span:last-child {
+  margin: 0;
+}
+.filtering .active {
+  border-color: #0d6efd;
+  color: #0d6efd;
+}
+
+.grid .grid-item {
+  position: relative;
+  overflow: hidden;
+}

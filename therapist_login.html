@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/185fd8e970.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Therapist | VirtualTX</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./logo.PNG"
+            alt=""
+            class="d-inline-block align-text-top"
+            width="90"
+            height="90"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Form -->
+    <div class="auth-form">
+      <div class="col-sm-4"></div>
+      <div class="container col-sm-4">
+        <p class="auth-title-login">Therapist Login</p>
+        <div class="text-left" style="margin-bottom: 2rem">
+          <p>
+            <b>Didn't have an account?</b>
+            <a href="./therapist_signup.html" style="text-decoration: none"
+              ><b>Sign Up</b></a
+            >
+          </p>
+        </div>
+        <!-- Pills content -->
+        <div class="tab-content">
+          <div
+            class="tab-pane fade show active"
+            id="pills-login"
+            role="tabpanel"
+            aria-labelledby="tab-login"
+          >
+            <form>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input
+                  type="email"
+                  id="loginName"
+                  class="form-control"
+                  placeholder="Type your UserID or Email"
+                />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="loginPassword"
+                  class="form-control"
+                  placeholder="Type your Password"
+                />
+              </div>
+
+              <!-- 2 column grid layout -->
+              <div class="row mb-4">
+                <div class="col-md-6 d-flex justify-content-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-3 mb-md-0">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="loginCheck"
+                      checked
+                    />
+                    <label class="form-check-label" for="loginCheck">
+                      Remember me
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-center">
+                  <!-- Simple link -->
+                  <a href="#!">Forgot password?</a>
+                </div>
+              </div>
+
+              <!-- Submit button -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-block mb-4"
+                style="text-align: center; width: -webkit-fill-available"
+              >
+                Sign in
+              </button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>
+                  Click here to
+                  <a href="./auth.html">Login or Signup as User</a>
+                </p>
+              </div>
+            </form>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-register"
+            role="tabpanel"
+            aria-labelledby="tab-register"
+            style="display: inline"
+          >
+            <form>
+              <!-- Name input -->
+              <div class="form-outline mb-4" style="display: flex">
+                <div class="col-sm-6" style="margin: 0.5rem">
+                  <input
+                    type="text"
+                    id="registerName"
+                    class="form-control"
+                    placeholder="Enter Your First Name"
+                  />
+                </div>
+                <div class="col-sm-6" style="margin: 0.5rem">
+                  <input
+                    type="text"
+                    id="registerName"
+                    class="form-control"
+                    placeholder="Enter Your Last Name"
+                  />
+                </div>
+              </div>
+
+              <!-- Email & Phone input -->
+              <div class="form-outline mb-4" style="display: flex">
+                <div class="col-sm-6" style="margin: 0.5rem">
+                  <input
+                    type="email"
+                    id="registerEmail"
+                    class="form-control"
+                    placeholder="Enter Your Email"
+                  />
+                </div>
+                <div class="col-sm-6" style="margin: 0.5rem">
+                  <input
+                    type="number"
+                    id="registerNumber"
+                    class="form-control"
+                    placeholder="Enter Your Phone Number"
+                  />
+                </div>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4" style="display: flex">
+                <div class="col-sm-6" style="margin: 0.5rem">
+                  <input
+                    type="password"
+                    id="registerPassword"
+                    class="form-control"
+                    placeholder="Enter Your Password"
+                  />
+                </div>
+                <div class="col-sm-6" style="margin: 0.5rem">
+                  <input
+                    type="password"
+                    id="registerConfirmPass"
+                    class="form-control"
+                    placeholder="Confirm Your Password"
+                  />
+                </div>
+              </div>
+
+              <!-- Checkbox -->
+              <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                  class="form-check-input me-2"
+                  type="checkbox"
+                  value=""
+                  id="registerCheck"
+                  checked
+                  aria-describedby="registerCheckHelpText"
+                />
+                <label class="form-check-label" for="registerCheck">
+                  I accept the privacy policy and terms & conditions
+                </label>
+              </div>
+
+              <!-- Submit button -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-block mb-3"
+                style="text-align: center; width: -webkit-fill-available"
+              >
+                Create account
+              </button>
+
+              <p class="text-center">or:</p>
+
+              <div class="text-center mb-2">
+                <p>Sign up with:</p>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Pills content -->
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+    <!-- Form-Ends -->
+
+    <script>
+      $("#pills-register").hide();
+      $("#tab-register").click(function () {
+        $("#pills-login").fadeOut(100);
+        $("#pills-register").delay(100).fadeIn(100);
+        $("#tab-login").removeClass("active");
+        $("#tab-login").removeClass("show");
+        $("#tab-register").addClass("active");
+        $("#tab-register").removeclass("show");
+      });
+
+      $("#tab-login").click(function () {
+        $("#pills-register").fadeOut(100);
+        $("#pills-login").delay(100).fadeIn(100);
+        $("#tab-register").removeClass("active");
+        $("#tab-register").removeClass("show");
+        $("#tab-login").addClass("active");
+        $("#tab-login").addClass("show");
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
